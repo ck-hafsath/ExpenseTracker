@@ -1,0 +1,19 @@
+:host {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+mat-drawer-container {
+  flex: 1 1 auto;
+  background-color: #e4e3e5;
+}
+
+mat-drawer {
+  width: 200px;
+  background-color: #162033;
+}
+
+main {
+  padding: 1rem;
+}

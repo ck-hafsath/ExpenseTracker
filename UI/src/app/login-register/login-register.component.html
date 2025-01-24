@@ -1,0 +1,44 @@
+<div class="hero">
+    <div class="form-box">
+        <div class="button-box">
+            <div id="btn" [ngStyle]="{ left: buttonPosition }"></div>
+            <button type="button" class="toggle-btn" (click)="login()">Login</button>
+            <button type="button" class="toggle-btn" (click)="register()">Register</button>
+        </div>
+
+        <div class="social-icons">
+            <h2>Expense Tracker</h2>
+        </div>
+
+
+
+        <form id="login" class="input-group"
+            [ngStyle]="{ left: loginPosition, visibility: loginVisible ? 'visible' : 'hidden' }"
+            (ngSubmit)="onSubmitlogin()">
+
+            <input type="email" class="input-field" placeholder="Email ID" [(ngModel)]="userId" name="email" required>
+            <input type="password" class="input-field" placeholder="Enter Password" [(ngModel)]="password"
+                name="password" required>
+            <input type="checkbox" class="check-box" name="rememberPassword">
+            <label for="rememberPassword">Remember Password</label>
+            <button type="submit" class="submit-btn">Login</button>
+        </form>
+
+
+      
+        <form id="register" class="input-group"
+            [ngStyle]="{ left: registerPosition, visibility: registerVisible ? 'visible' : 'hidden' }"
+            (ngSubmit)="onSubmitReg()">
+            <input type="email" class="input-field" placeholder="Email ID" [(ngModel)]="registerForm.email"
+                [ngModelOptions]="{standalone: true}" required>
+            <input type="password" class="input-field" [(ngModel)]="registerForm.password" placeholder="Enter Password"
+                required>
+            <input type="checkbox" class="check-box" [(ngModel)]="registerForm.agree"
+                [ngModelOptions]="{standalone: true}">
+            <label for="checkbox">I agree with the terms and conditions.</label>
+            <button type="submit" class="submit-btn">Register</button>
+        </form>
+
+      
+    </div>
+</div>

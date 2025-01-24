@@ -1,0 +1,149 @@
+.insert-form {
+  margin-bottom: 2rem;
+
+  h2 {
+    color: #0d0e0d;
+  }
+
+  mat-form-field {
+    margin-right: 1rem;
+  }
+
+  .year {
+    width: 100px;
+  }
+
+  .month,
+  .type {
+    width: 150px;
+  }
+
+  .date {
+    width: 75px;
+  }
+
+  .desc {
+    width: 300px;
+  }
+
+  .amt {
+    width: 100px;
+  }
+}
+
+section.table {
+  min-width: 800px;
+  max-width: 1000px;
+
+  .mat-mdc-header-cell {
+    font-size: 1.1rem;
+    color: #fff;
+  }
+}
+
+.mat-mdc-select {
+  color: black !important;
+}
+
+
+
+mat-form-field.mat-form-field {
+  background-color: black;
+  color: black;
+}
+
+mat-input-element,
+mat-select-trigger,
+mat-label,
+mat-error {
+  color: black !important;
+}
+
+mat-select .mat-select-arrow {
+  color: black;
+}
+
+
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+  border-color: black !important;
+}
+
+::ng-deep .mat-form-field-label {
+  color: black !important;
+}
+
+::ng-deep .mat-form-field-ripple {
+  background-color: black !important;
+}
+
+::ng-deep .mat-select-arrow {
+  color: black !important;
+}
+
+::ng-deep .mat-select-trigger {
+  color: black !important;
+}
+
+.mat-mdc-select-arrow svg {
+  fill: rgba(0, 0, 0, 0.54) !important;
+}
+
+.mat-mdc-raised-button[disabled],
+.mat-mdc-raised-button.mat-mdc-button-disabled {
+  background-color: #273042 !important;
+}
+
+table {
+  border-collapse: separate;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+  border-bottom: 1px solid #ddd;
+  border-radius: 10px 10px 0px 0px;
+  overflow: hidden;
+
+
+  tr {
+    padding: .35em;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+    transition: all 0.2s;
+    background-color: #ffffff;
+    color: #0d0e0d;
+    border-bottom: solid #273042 0.5px;
+  }
+
+  th,
+  td {
+    padding: 5px 15px;
+    text-align: left;
+    border-right: 0.5px solid #bbb7b7;
+  }
+
+  td:last-child {
+    border-right: none;
+  }
+
+  th {
+    font-size: 12px;
+    letter-spacing: .1em;
+    color: #e3e6e6;
+    padding: 15px 15px;
+    background-color: #2e3748;
+  }
+
+  tr {
+    border-bottom: 1px solid #d1d1d1;
+  }
+
+  th tr {
+    background-color: transparent !important;
+  }
+}
+
+::ng-deep .mat-mdc-select-arrow svg {
+  fill: rgb(46 55 72) !important;
+}
+
